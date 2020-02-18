@@ -1,4 +1,10 @@
 name: CI
 on: push
-  run: |
-    kubectl create -f sample.yml
+
+jobs:
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+     
+    - name: Moving build to artifacts directory
+      run: kubectl create -f sample.yml
