@@ -1,0 +1,12 @@
+name: Kubernetes ns
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: centos
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: kubectl apply -f sample.yml
