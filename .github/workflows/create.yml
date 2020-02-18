@@ -1,12 +1,2 @@
-# This workflow will build a docker container, publish it to Google Container Registry, and deploy it to GKE.
-#
-name: create
-  push:
-    branches:
-    - master
-
-
-    - name: Deploy
-      run: |
-        kubectl create -f sample.yml
-        
+run: |
+  kubectl create -f sample.yml
