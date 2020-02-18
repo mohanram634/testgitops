@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: centos
+    runs-on: 
     steps:
     - uses: actions/checkout@v2
     - name: Run a one-line script
