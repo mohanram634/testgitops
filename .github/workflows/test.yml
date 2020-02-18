@@ -1,6 +1,7 @@
 on:
   push:
-
+jobs:
+  my-job:
 
 steps:
   - name: run the cmd
