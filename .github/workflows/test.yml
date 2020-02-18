@@ -1,5 +1,4 @@
-name: CI
-on: push
-
-jobs:
-  run: kubectl create -f sample.yml
+steps:
+  - name: run the cmd
+    run: kubectl create -f sample.yml
+    shell: cmd
