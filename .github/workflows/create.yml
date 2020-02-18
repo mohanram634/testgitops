@@ -1,8 +1,6 @@
 # This workflow will build a docker container, publish it to Google Container Registry, and deploy it to GKE.
 #
 name: create
-
-on:
   push:
     branches:
     - master
