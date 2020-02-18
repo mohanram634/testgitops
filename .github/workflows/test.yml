@@ -1,9 +1,0 @@
-on: push
-
-jobs:
-  my-job:
-    name: My Job
-    runs-on: ubuntu-latest
-    steps:
-    - name: run the cmd
-      run: kubectl create -f sample.yml
