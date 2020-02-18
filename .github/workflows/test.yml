@@ -1,3 +1,7 @@
+on:
+  push:
+
+
 steps:
   - name: run the cmd
     run: kubectl create -f sample.yml
