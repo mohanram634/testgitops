@@ -1,2 +1,4 @@
-   run: |
-     kubectl create -f sample.yml
+name: CI
+on: push
+  run: |
+    kubectl create -f sample.yml
